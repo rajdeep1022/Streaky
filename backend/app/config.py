@@ -1,0 +1,1 @@
+# Environment configuration settings for the application

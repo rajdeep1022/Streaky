@@ -1,0 +1,15 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+
+# Firebase Auth + Firestore
+firebase-admin==6.5.0
+
+# Validation & config
+pydantic==2.6.4
+python-dotenv==1.0.1
+
+# Date handling (important for streak logic)
+python-dateutil==2.9.0.post0
+
+# Basic testing (optional but recommended)
+pytest==8.1.1
