@@ -1,4 +1,14 @@
+import { useState } from "react";
+
 function HabitCard({ name }) {
+  // state variable
+  const [streak, setStreak] = useState(0);
+
+  // function runs on button click
+  const markDone = () => {
+    setStreak(streak + 1);
+  };
+
   return (
     <div style={{
       background: "white",
@@ -12,9 +22,14 @@ function HabitCard({ name }) {
     }}>
       <div>
         <h3>{name}</h3>
-        <p>🔥 Streak: 5 days</p>
+        <p>🔥 Streak: {streak} days</p>
       </div>
-      <button>✅</button>
+
+      <button onClick={markDone}>
+        ✅
+      </button>
     </div>
   );
 }
+
+export default HabitCard;
